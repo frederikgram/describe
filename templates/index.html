@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Describe | Intuitive Image Search</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <form action="/" method="get" id="search_query_form">
+            <input id="search_query_input" type="text" name="query" placeholder="{{ example_query if query_value == None}}" value="{{ query_value if query_value != None }}">
+        </form>
+
+        <button type="submit" form="search_query_form" value="Submit">Submit</button>
+        
+        <form action="/" method="post" enctype="multipart/form-data" >
+            <input type="file" name="fileupload" value="fileupload" id="fileupload">
+                <label for="fileupload"> Select a file to upload</label>
+            <input type="submit" value="submit">
+        </form>
+
+        <p> notice: only 100 images are shown at the time, but there are {{ total_images }} images that can be searched</p>
+        
+        {% for image, caption in images %}
+            {% if loop.index0 % 5 == 0 %}
+            <div id="row">
+            {% endif %}
+                <div id="col">
+                    <img src="{{ image }}" alt="none" width="600" height="400">
+                    <div class="desc">{{ caption }}</div>
+                </div>
+            {% if loop.index0 % 5 == 0 %}
+            </div>
+            {% endif %}
+        {% endfor %}
+
+
+    </div>
+</body>
+</html>

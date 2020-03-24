@@ -1,0 +1,17 @@
+/* Clear floats after image containers */
+#images_container {
+    content: "";
+    clear: both;
+    display: table;
+} 
+
+/* Differantiate example queries from real queries */ 
+#search_query_input::placeholder {
+    color: gray;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
