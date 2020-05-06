@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Describe | Intuitive Image Search</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+
+</head>
+<body>
+    <div id="top">
+        <center>
+            <div id="search">
+                <form action="/" method="get" id="search_query_form" >
+                    <input id="search_query_input" type="text" name="query" placeholder="{{ 'Search for something, what about trains?' if query_value == None}}" value="{{ query_value if query_value != None }}">
+                    <button type="submit" form="search_query_form" value="Submit" id="search_query_button">Submit</button>
+                </form>
+
+            </div>
+
+            <p style="font-style: italic;font-family: 'Raleway', Arial, sans-serif;">
+                Find an image, and use your words to describe it. {{ total_images }} images are in the bucket so lets so see if we can find it.
+            </p>
+
+            <p style="font-style: italic;font-family: 'Raleway', Arial, sans-serif;font-size: medium;color:black;">
+                Hover over an image, to see the automatically generated metadata
+            </p>
+
+            <p style="font-style: italic;font-family: 'Raleway', Arial, sans-serif;font-size: small;color:black;">
+                Want to know how this works? 
+                Find a thorough explanation here:
+            </p>
+
+            <a href="https://github.com/frederikgram/describe">The Essay</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://frederikgram.github.io/">My Website</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/frederikgram/describe">Github</a>
+
+        </center>
+    
+    
+    </div>
+    <div id="figures">
+        {% for image, caption, objects in images %}
+        <figure class="snip0016">
+            <img src="{{ image }}"/>
+            <figcaption>
+                <h3> Generated Caption: </h3>
+                <p>{{ caption  }}</p>
+                <br>
+                <h3> Detected Objects: </h3>
+                {% for obj in objects %}
+                    <p>- {{  obj  }}</p>
+                {% endfor %}
+                <a href="#"></a>
+            </figcaption>			
+        </figure>
+        {% endfor %}
+    </div>
+</body>
+</html>
