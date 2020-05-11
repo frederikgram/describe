@@ -54,10 +54,13 @@
                 <p>{{ caption  }}</p>
                 <br>
                 <h3> Detected Objects: </h3>
-                {% for obj in objects %}
-                    <p>- {{  obj  }}</p>
-                {% endfor %}
-                <a href="#"></a>
+                {% if objects != None %}
+                    {% for obj in objects %}
+                        <p>- {{  obj  }}</p>
+                    {% endfor %}
+                {% else %}
+                    <p>No Objects Detected</p>
+                {% endif %}
             </figcaption>			
         </figure>
         {% endfor %}

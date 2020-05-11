@@ -8,10 +8,6 @@ from describe.processing.pipelines.database import fetch_all_images_from_db
 
 @app.route("/")
 def index():
-    return "Hello World!"
-
-@app.route("/dev")
-def dev():
 
     images = fetch_all_images_from_db()
     search_query = request.args.get('query')
@@ -25,7 +21,7 @@ def dev():
             # Pretty formatted caption
             f'"{img.caption}"' if img.caption != "" else "No Caption Generated",
             # Pretty formatted objects
-            "No Objects Detected" if len(img.objects) == 0 else [f"{list(obj.keys())[0]}, certainty: {round(list(obj.values())[0] * 100, 2)}%" for obj in img.objects])
+            None if len(img.objects) == 0 else [f"{list(obj.keys())[0]}, certainty: {round(list(obj.values())[0] * 100, 2)}%" for obj in img.objects])
             for img in images],
         query_value = search_query if search_query else None,
     )
