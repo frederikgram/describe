@@ -1,8 +1,8 @@
 """ """
 
 from describe import app
-from describe.processing import pipelines
+from describe.processing.pipelines import on_startup
 
 if __name__ == '__main__':
-    pipelines.on_startup()
+    on_startup()
     app.run()

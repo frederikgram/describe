@@ -4,7 +4,7 @@ import random
 from flask import render_template, url_for, request
 
 from describe import app
-from describe.processing import pipelines
+from describe.processing.pipelines.database import fetch_all_images_from_db
 
 @app.route("/")
 def index():
@@ -13,7 +13,7 @@ def index():
 @app.route("/dev")
 def dev():
 
-    images = pipelines.fetch_all_images_from_db()
+    images = fetch_all_images_from_db()
     search_query = request.args.get('query')
 
     return render_template(

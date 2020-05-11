@@ -75,4 +75,17 @@ def get_caption(model, image_path):
 
 if __name__ == '__main__':
     model = start_model()
-    sys.stdout.write(get_caption(model, sys.argv[1]))
+
+    # Bulk Images
+    if sys.argv[-1] == "bulk":
+        for path in sys.argv[-2].split(','):
+            caption = get_caption(model, path)
+            caption = caption.split('\n')[-1]
+            sys.stdout.write("\ncaption:" + get_caption(model, path) + "\n")
+        sys.stdout.write("\ndone")
+
+    # Single Image 
+    else:
+        caption = get_caption(model, sys.argv[1])
+        caption = caption.split('\n')[-1]
+        sys.stdout.write(caption)
