@@ -102,9 +102,8 @@ def on_startup():
     """ """
     print("Running Startup Procedures...")
     
-    print("Searching for new images")
-    add_new_images()
-
     print("Cleaning DB Entries whose images are unavailable")
     remove_unavailable_entries()
-    
+
+    print("Searching for new images")
+    add_new_images()
