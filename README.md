@@ -30,4 +30,4 @@ combined with the TFIDSimilarity result for how well it matches the given search
 [My Website](https://frederikgram.github.io/) and 
 [My LinkedIn](https://www.linkedin.com/in/frederikgramkortegaard/).
 ## Running the service
-Currently, the service is not in a state where it can easily be deployed. A complete docker-solution is in development.
+Currently, the service is not in a state where it can easily be deployed. A complete docker-solution is in development. A demo of the searching process can be seen [here](./demos/search_demo.gif) (the GUI is purely for showcase purposes and does not reflect any real product design).
