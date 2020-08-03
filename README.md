@@ -23,7 +23,8 @@ following process on the input query.
   - TFID Similaity (Query and Caption),
   - Object-by-Object Similarity (Word2Vec Encoded) 
 
-After this, we can get an ensemble prediction using the weighted mean of object certainties combined with the TFIDSimilarity result for how well it matches the given search query.
+After this, we can get an ensemble prediction using the weighted mean of object certainties\
+combined with the TFIDSimilarity result for how well it matches the given search query.
 
 ## Links
 [My Website](https://frederikgram.github.io/) and 
