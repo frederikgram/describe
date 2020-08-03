@@ -4,8 +4,7 @@
 Search images by describing them with conversational Language, supporting both context _and_ object similarity.
 
 
-<img src="./demos/metadata_showcase.gif" alt="drawing"/>
-<img src="./demos/search_demo.gif" alt="drawing"/>
+<img src="./demos/test.gif" alt="drawing"/>
 
 ## Links
 
