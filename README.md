@@ -16,8 +16,8 @@ Every image added to the ```./static/images/``` folder is analysed using a pipel
 - Object Detection (YOLOv3)
 - Caption Generation (CNN -> RNN)
 
-Following this, we perform the following process 
-on the input query.
+When the user is searching, we perform the
+following process on the input query.
 - Query Processing (Tokenizing, Word2Vec etc.)
 - Similarity Analysis
   - TFID Similaity (Query and Caption),
