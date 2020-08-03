@@ -5,10 +5,10 @@
 # About
 
 Search images by describing their appearance using
-conversational Language, supporting both context
+conversational language, supporting both context
 _and_ object similarity.
 
-No pre-made metadata required! everything is 
+No pre-made metadata required! Everything is 
 analyzed and stored _on-the-fly_.
 
 # How does it work?
