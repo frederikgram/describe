@@ -15,6 +15,9 @@ analyzed and stored _on-the-fly_.
 Every image added to the ```./static/images/``` folder is analysed using a pipeline of:
 - Object Detection (YOLOv3)
 - Caption Generation (CNN -> RNN)
+
+Following this, we perform the following process 
+on the input query.
 - Query Processing (Tokenizing, Word2Vec etc.)
 - Similarity Analysis
   - TFID Similaity (Query and Caption),
