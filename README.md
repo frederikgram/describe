@@ -20,7 +20,7 @@ Every image added to the ```./static/images/``` folder is analysed using a pipel
   - TFID Similaity (Query and Caption),
   - Object-by-Object Similarity (Word2Vec Encoded) 
 
-After this, we can get an ensemble prediction using the weighted mean of object certainties combined with the TFIDSimilarity result using a weighted dot-function.
+After this, we can get an ensemble prediction using the weighted mean of object certainties combined with the TFIDSimilarity result.
 
 ## Links
 [My Website](https://frederikgram.github.io/) and 
