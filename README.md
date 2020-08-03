@@ -20,11 +20,11 @@ When the user is searching, we perform the
 following process on the input query.
 - Query Processing (Tokenizing, Word2Vec etc.)
 - Similarity Analysis
-  - TFID Similaity (Query and Caption),
+  - TFIDF Similaity (Query and Caption),
   - Object-by-Object Similarity (Word2Vec Encoded) 
 
 After this, we can get an ensemble prediction using the weighted mean of object certainties\
-combined with the TFIDSimilarity result for how well it matches the given search query.
+combined with the TFIDF Similarity result for how well it matches the given search query.
 
 ## Links
 [My Website](https://frederikgram.github.io/) and 
