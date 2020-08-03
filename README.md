@@ -4,10 +4,12 @@
 Search images by describing them with conversational Language, supporting both context _and_ object similarity.
 
 
-<img src="./demos/test.gif" alt="drawing"/>
+<img src="./demos/banner.png" alt="drawing"/>
 
 ## Links
 
 [Essay](#)
 
 [My Website](https://frederikgram.github.io/)
+
+
