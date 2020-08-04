@@ -21,7 +21,7 @@ following process on the input query.
 - Query Processing (Tokenizing, Word2Vec etc.)
 - Similarity Analysis
   - TFIDF Similaity (Query and Caption),
-  - Object-by-Object Similarity (Word2Vec Encoded) 
+  - Object-by-Object Similarity (between the query and the objects detected in the stored images. # Word2Vec Encoded) 
 
 After this, we can get an ensemble prediction using the weighted mean of object certainties\
 combined with the TFIDF Similarity result for how well the caption matches the given search query.
