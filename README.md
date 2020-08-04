@@ -24,7 +24,7 @@ following process on the input query.
   - Object-by-Object Similarity (Word2Vec Encoded) 
 
 After this, we can get an ensemble prediction using the weighted mean of object certainties\
-combined with the TFIDF Similarity result for how well it matches the given search query.
+combined with the TFIDF Similarity result for how well the caption matches the given search query.
 
 ## Links
 [My Website](https://frederikgram.github.io/) and 
