@@ -2,7 +2,10 @@
 
 <img src="./demos/banner.png" alt="drawing"/>
 :bookmark: [Fast forward to the model evaluations](./models.md)
+
 :bookmark: [Fast forward to the interactive demo](#)
+
+
 # About
 
 Search images by describing their appearance using
