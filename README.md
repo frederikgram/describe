@@ -1,12 +1,12 @@
 
 
 <img src="./demos/banner.png" alt="drawing"/>
-
+:bookmark: [Fast forward to the model evaluations](./models.md)
+:bookmark: [Fast forward to the interactive demo](#)
 # About
 
 Search images by describing their appearance using
-conversational language, supporting both context
-_and_ object similarity.
+conversational language. Without lemmatization supporting for in-image objects imilarity and word2vec encodings.
 
 No pre-made metadata required! Everything is 
 analyzed and stored _on-the-fly_.
