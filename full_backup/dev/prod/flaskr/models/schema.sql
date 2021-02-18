@@ -1,6 +1,0 @@
-
-CREATE TABLE images (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  path TEXT UNIQUE NOT NULL,
-  metadata TEXT,
-);
