@@ -18,4 +18,3 @@ cp -r dev prod
 echo "Copied ./dev   -> ./prod
 Old version: $old_version -> New version: $new_version"
 cat <<< "$new_version" > "./prod/version"
-cat <<< $(date) > "./prod/build_date
