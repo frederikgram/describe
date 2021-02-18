@@ -1,0 +1,7 @@
+{
+    "DATABASE": "./flaskr/models/images.db",
+    "ACCEPTED_IMAGE_FILE_TYPES": [
+        "jpg",
+        "png"
+    ]
+}

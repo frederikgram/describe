@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+</head>
+
+<body>
+    <form action="/" method="GET">
+        <input type="submit" value="Frontpage" />
+    </form>
+    <div class="gallery">
+        {% set static_image_path = "images/" + image.path %}
+        <img src="{{ url_for('static', filename=static_image_path)}}" alt=" {{image.alt}}">
+        <div class="desc">{{image.caption}}</div>
+    </div>
+</body>
+
+</html>
