@@ -1,1 +1,2 @@
-![alt text](https://github.com/frederikgram/describe/blob/master/resources/architecture.png?raw=true =240x240)
+<img src="/resources/architecture.png" alt="drawing" style="width:240px; height:240px;"/>
+
