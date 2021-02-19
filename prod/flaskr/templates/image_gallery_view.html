@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 
 <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
@@ -13,15 +13,14 @@
 
             <div class="slidecontainer">
                 <label>Similarity Threshold</label>
-                <input type="range" min="1" max="100" value="50" class="slider" id="search_threshold" ,
+                <input type="range" min="0" max="100" value="50" class="slider" id="search_threshold" ,
                     name="search_threshold" oninput="this.nextElementSibling.value = this.value">
-                <output>50</output>% Similarity
+                <output name="slider_value">50</output>% Similarity
             </div>
         </form>
 
 
     </div>
-
     {% for image in images %}
     <div class=" gallery">
         {% set static_image_path = "images/" + image.path %}

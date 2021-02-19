@@ -1,7 +1,11 @@
 {
     "DATABASE": "./flaskr/models/images.db",
+    "PATH_TO_IMAGES": "./flaskr/static/images",
     "ACCEPTED_IMAGE_FILE_TYPES": [
         "jpg",
         "png"
-    ]
+    ],
+    "INSERT_NEW_IMAGES_ON_STARTUP": true,
+    "ANALYZE_UNANALYSED_IMAGES_ON_STARTUP": true,
+    "PATH_TO_API_ENDPOINT_SPECIFICATIONS": "../services/endpoints.json"
 }

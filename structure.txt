@@ -1,0 +1,19 @@
+- Abstract overview
+.
+├── flaskr
+│   ├── controller
+│   ├── models
+│   ├── settings.json
+│   ├── static
+│   ├── templates
+│   └── views
+│   └── settings.json
+├── services
+│   ├── caption_generation
+│   ├── endpoints.json
+│   ├── object_detection
+│   └── similarity_measurement
+│   └── endpoints.json
+├── setup.sh
+.
+
