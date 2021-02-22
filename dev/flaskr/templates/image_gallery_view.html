@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+    <title>Search Images by Describing their Apperance</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
 </head>
 
@@ -27,7 +28,7 @@
         <a href="/image/{{image.path}}">
             <img src="{{ url_for('static', filename=static_image_path)}}" alt=" {{image.alt}}">
         </a>
-        <div class="desc">{{image.caption}}</div>
+        <div class="desc">{{image.metadata["caption"]}}</div>
     </div>
     {% endfor %}
 

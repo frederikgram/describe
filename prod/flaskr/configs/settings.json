@@ -1,4 +1,5 @@
 {
+    "_comment": "All paths seen in this configuration file is assuming a root path of ./describe/ in which both the ./flaskr/ and ./services/ folders exist",
     "DATABASE": "./flaskr/models/images.db",
     "PATH_TO_IMAGES": "./flaskr/static/images",
     "ACCEPTED_IMAGE_FILE_TYPES": [
@@ -7,5 +8,5 @@
     ],
     "INSERT_NEW_IMAGES_ON_STARTUP": true,
     "ANALYZE_UNANALYSED_IMAGES_ON_STARTUP": true,
-    "PATH_TO_API_ENDPOINT_SPECIFICATIONS": "../services/endpoints.json"
+    "PATH_TO_API_ENDPOINT_SPECIFICATIONS": "/services/endpoints.json"
 }

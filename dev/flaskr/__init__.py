@@ -1,30 +1,6 @@
 """ """
 from flask import Flask
-import logging
-from logging.config import dictConfig
 import os
-
-# Setup logging configuration
-logging.getLogger("werkzeug").setLevel(logging.ERROR)
-
-dictConfig(
-    {
-        "version": 1,
-        "formatters": {
-            "default": {
-                "format": "[%(asctime)s] %(levelname)s in %(module)s: %(message)s",
-            }
-        },
-        "handlers": {
-            "wsgi": {
-                "class": "logging.StreamHandler",
-                "stream": "ext://flask.logging.wsgi_errors_stream",
-                "formatter": "default",
-            }
-        },
-        "root": {"level": "INFO", "handlers": ["wsgi"]},
-    }
-)
 
 
 def create_flask_app():
@@ -34,30 +10,23 @@ def create_flask_app():
 
 app = create_flask_app()
 
+# Configure application logger
+from .logging import configure_logger
+configure_logger()
+
 # Apply configurations
 # to the Flask instance
-app.config.from_json("settings.json")
+# @TODO get config from an object in ./configs/ instead of from a static settings file
+app.config.from_json("./configs/settings.json")
 app.app_context().push()
 
-# Configure Logger
-app.logger.level
-
-# Setup working directory for
-# consistency of file management
-
-
 # Setup Database interactions
-from .models import init_app, insert_new_images_into_db
-
+from .models import init_app
 init_app(app)
 
-if app.config["INSERT_NEW_IMAGES_ON_STARTUP"]:
-    insert_new_images_into_db()
-
-from .controller import analyse_all_unanalysed_images
-
-if app.config["ANALYZE_UNANALYSED_IMAGES_ON_STARTUP"]:
-    analyse_all_unanalysed_images()
+# Startup Procedures
+from .controllers import run_startup_procedures
+run_startup_procedures()
 
 # Expose routes to end-user
 from .views import *

@@ -15,6 +15,15 @@ fi
 
 rm -r -f prod
 cp -r dev prod
-echo "Copied ./dev   -> ./prod
-Old version: $old_version -> New version: $new_version"
+if [ -f "./dev/env/bin/activate" ]
+then
+    echo "> found virtualenv in ./dev"
+    source ./dev/env/bin/activate
+    echo "> freezing requirements into ./prod/requirements.txt"
+    pip3 freeze > ./prod/requirements.txt
+    echo "> removing ./prod/env"
+    rm -r ./prod/env
+fi
+echo "> Copied ./dev   -> ./prod
+> Old version: $old_version -> New version: $new_version"
 cat <<< "$new_version" > "./prod/version"
