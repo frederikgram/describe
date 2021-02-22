@@ -14,7 +14,7 @@ import flask
 from typing import *
 from flask import render_template, url_for, redirect, current_app
 from typing import *
-from flaskr import models
+from frontend import models
 
 
 def build_image_gallery_view(query: str, similarity_treshhold: int):

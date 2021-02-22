@@ -2,7 +2,7 @@
 
 from flask import current_app
 from .actions import *
-from flaskr.models.database_updaters import insert_new_images_into_db
+from frontend.models.database_updaters import insert_new_images_into_db
 
 def run_startup_procedures():
     """ Using the configuration file bound to

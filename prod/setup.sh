@@ -12,6 +12,6 @@ else
         exit 125
     fi
 fi
-export FLASK_APP=flaskr
+export FLASK_APP=frontend
 export FLASK_ENV=development
 flask run

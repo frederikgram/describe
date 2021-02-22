@@ -30,7 +30,7 @@ def insert_new_images_into_db():
     Ignores both images that already exist in the database
     and images whose file-extension is not supported
     as described in
-        ../describe/flaskr/settings.json"""
+        ../describe/frontend/settings.json"""
 
     path_to_images = current_app.config["PATH_TO_IMAGES"]
     if not os.path.exists(path_to_images):

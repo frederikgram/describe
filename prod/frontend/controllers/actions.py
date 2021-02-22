@@ -6,7 +6,7 @@ import requests
 import flask
 
 from flask import current_app
-from flaskr import models
+from frontend import models
 from typing import *
 
 
