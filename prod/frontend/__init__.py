@@ -1,4 +1,4 @@
-""" """
+""" Entrypoint for the frontend modules flask.app """
 from flask import Flask
 import os
 

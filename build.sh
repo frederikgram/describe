@@ -15,6 +15,7 @@ fi
 
 rm -r -f prod
 cp -r dev prod
+
 if [ -f "./dev/env/bin/activate" ]
 then
     echo "> found virtualenv in ./dev"

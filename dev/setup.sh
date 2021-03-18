@@ -14,4 +14,5 @@ else
 fi
 export FLASK_APP=frontend
 export FLASK_ENV=development
+export PYTHONDONTWRITEBYTECODE=1.
 flask run

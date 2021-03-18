@@ -27,6 +27,9 @@ def build_image_gallery_view(query: str, similarity_treshhold: int):
 
     current_app.logger.info("Attempting to build an image gallery")
 
+    # @TODO  This is where we would call some
+    # analytics stuff, to match query and similarity
+    # with the analysed images in the db
     images = models.get_all_unanalysed_images()
     return render_template("image_gallery_view.html", images=images)
 
