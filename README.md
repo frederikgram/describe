@@ -7,10 +7,7 @@
 I'd prioritize reading the ["Demo & Examples"](./resources/examples.md) section as well as the ["Architecture"](./resources/architecture.md)" section.
 
 
-## Installation
-
-## Setup
-
+## Quick References
 :bookmark: [Service Demo & Examples](./resources/examples.md)
 
 :bookmark: [Project & Micro-service Architecture](./resources/architecture.md)
@@ -19,6 +16,8 @@ I'd prioritize reading the ["Demo & Examples"](./resources/examples.md) section 
 
 :bookmark: [Overview of Machine Learning Models](./resources/models.md)
 
+## Installation
 
+## Setup
 
 <img src="/resources/test.gif"/>
