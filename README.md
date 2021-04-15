@@ -12,9 +12,10 @@ I'd prioritize reading the ["Demo & Examples"](./resources/examples.md) section 
 
 :bookmark: [Project & Micro-service Architecture](./resources/architecture.md)
 
+:bookmark: [Overview of Machine Learning Models](./resources/models.md)
+
 :bookmark: [API Swagger Specifications](./resources/api.md)
 
-:bookmark: [Overview of Machine Learning Models](./resources/models.md)
 
 ## Installation
 
