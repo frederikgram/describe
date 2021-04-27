@@ -4,7 +4,7 @@
 
 
 :speech_balloon: If you're interested in this project as a recruiter or with similar intention,  
-I'd prioritize reading the ["Demo & Examples"](./resources/examples.md) section as well as the ["Architecture"](./resources/architecture.md)" section.
+I'd prioritize reading the ["Demo & Examples"](./resources/examples.md) section as well as the ["Architecture"](./resources/architecture.md) section.
 
 
 ## Quick References
